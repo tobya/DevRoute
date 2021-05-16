@@ -30,7 +30,7 @@ class DevRouteProvider extends ServiceProvider
     public function boot()
     {
             // load test routes when local dev
-            if (Config('app.env') != 'production'){
+            if (Str::of( Config('app.env'))->lower()){
                 \Route::prefix('dev')
                     ->middleware('web')
                     ->group(base_path('routes/devroutes.php'));
