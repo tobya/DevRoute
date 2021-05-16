@@ -10,3 +10,22 @@ All the routes will be unavailable if your
 is set to 'production'
 
 Very useful when you have testing routes that you definitely dont want available when running in production.
+
+##Installation
+
+> composer require tobya/devroutes
+> 
+
+Once installed will create a file routes/devroutes.php 
+
+Place any dev routes in this file, they are all prefixed with 'dev'
+
+````
+
+Route::get('/testuser/{user}', function($user){
+  echo $user->name;
+});
+
+````
+
+if you visit `example.com/dev/testuser/4` you will get the information.
