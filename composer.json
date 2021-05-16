@@ -1,0 +1,24 @@
+{
+    "name": "tobya/devroute",
+    "description": "Create a dev route file that is hidden in production",
+    "keywords": ["laravel","route","Testing","local code"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Toby Allen",
+            "email": "tobya@toflidium.com"
+        }
+    ],
+    "autoload" : {
+        "psr-4" :{
+            "Tobya\\DevRoute" : "src/"
+        }
+
+    },
+    "extra": {
+        "laravel": {
+            "providers":["Tobya\\DevRoute\\DevRouteProvider"]
+        }
+    }
+    "require": {}
+}
