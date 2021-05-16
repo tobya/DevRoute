@@ -20,5 +20,5 @@
             "providers":["Tobya\\DevRoute\\DevRouteProvider"]
         }
     }
-    "require": {}
+    
 }
