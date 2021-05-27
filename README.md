@@ -11,14 +11,14 @@ Very useful when you have testing routes that you definitely dont want available
 
 ##Installation
 
-> composer require tobya/devroutes
+> composer require tobya/devroute
 > 
 
 Once installed will create a file routes/devroutes.php 
 
 Place any dev routes in this file, they are all prefixed with 'dev'
 
-````
+````php
 
 Route::get('/testuser/{user}', function($user){
   echo $user->name;
