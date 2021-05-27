@@ -16,7 +16,7 @@ Very useful when you have testing routes that you definitely dont want available
 
 Once installed will create a file routes/devroutes.php 
 
-Place any dev routes in this file, they are all prefixed with 'dev'
+Place any dev routes in this file, they are all prefixed with 'dev'.  'dev' routes have the standard web middlewares.
 
 ````php
 
