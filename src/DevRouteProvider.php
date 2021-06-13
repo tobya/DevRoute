@@ -3,6 +3,7 @@
 namespace Tobya\DevRoute;
 
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Str;
 use Illuminate\Support\ServiceProvider;
 
 class DevRouteProvider extends ServiceProvider
@@ -30,7 +31,7 @@ class DevRouteProvider extends ServiceProvider
     public function boot()
     {
             // load test routes when local dev
-            if (Str::of( Config('app.env'))->lower()){
+            if (Str::of( Config('app.env'))->lower() != 'production'){
                 \Route::prefix('dev')
                     ->middleware('web')
                     ->group(base_path('routes/devroutes.php'));
