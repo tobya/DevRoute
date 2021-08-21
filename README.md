@@ -1,22 +1,26 @@
 # DevRoute
-A laravel package.
+A Laravel package.
 
-Adds a Dev Routes routing file where you can store routes that are available for local testing, but unavailable in production.
+Adds a `/dev` routes routing file `devroutes.php` where you can store routes that are available for local testing, but unavailable in production.
 
-All the routes will be **unavailable** if your 
+All the routes will be available if
+
+> APP_ENV=local
+
+but **unavailable** if your 
 
 > APP_ENV=production
 
-Very useful when you have testing routes that you definitely dont want available when running in production.
+This is very useful when you have testing routes that you definitely dont want available when running in production.
 
 ##Installation
 
 > composer require tobya/devroute
 > 
 
-Once installed will create a file routes/devroutes.php 
+Once installed will create a file `routes/devroutes.php` 
 
-Place any dev routes in this file, they are all prefixed with 'dev'.  'dev' routes have the standard web middlewares.
+Place any dev routes in this file, they are all prefixed with '/dev'.  'dev' routes have the standard web middlewares.
 
 ````php
 
