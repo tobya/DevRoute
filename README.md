@@ -15,8 +15,8 @@ This is very useful when you have testing routes that you definitely dont want a
 
 ## Installation
 
-> composer require tobya/devroute
-> 
+     composer require tobya/devroute
+ 
 
 Once installed will create a file `routes/devroutes.php` 
 
